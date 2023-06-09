@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 33;
+        console.log(a);
+
+      function hey(){
+        console.log('Invin')
+
+      } 
+      
+      let obja = {
+        r:30,
+        s:40,
+        t:50,
+        func: function myfunc(Numbers) {
+            console.log('the number is ' + Numbers);
+        }
+      }
+
+      document.addEventListener("click",function click(){
+        console.log('clicked');
+        //alert('you have clicked')
+        //confirm('are you sure?')
+        let cnf = confirm('are you sure???')
+        console.log(cnf);
+      })
+
+      //for (let index = 0; index < array.length; index++) {
+      //  const element = array[index];
+      // }
+     
+     // while (condition) { 
+     //}
+
+     //do while (condition) { 
+     //}
+
+     //if (condition) {   
+     //}
+
+     //if (condition) {
+        
+     //} else {   
+     
+     let arr = [33,34,35];
+     console.log(this);
+     //function myfunc(numbers) {
+      //  console.log('the number is ' + this);
+     //}
+
+     let mobj = {
+        a: this,
+     myfunc: function(number){
+        console.log(this);
+     }
+    }
+     mobj.myfunc();
+     console.log(mobj.a);
+
+     setTimeout(() => {
+        console.log('yeah');
+     }, 4000);
+     console.log('mein niche wali script hoon');
+         </script>
+</head>
+<body>
+    <h1>
+ Hello , i am learning JavaScript
+    </h1>
+</body>
+</html>
